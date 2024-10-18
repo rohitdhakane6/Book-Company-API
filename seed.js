@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const { faker } = require('@faker-js/faker');
 const Books = require('./model/book.js')
 
-const MONGO_URL ='mongodb+srv://rohitdhakane6:JgMehVwhxVU0R7i7@cluster0.hku14.mongodb.net/bookapi?retryWrites=true&w=majority&appName=Cluster0'
 mongoose.connect(MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Connected to MongoDB');
